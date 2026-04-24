@@ -19,7 +19,8 @@ export function generateBlankText(
     return { blankedText: text, hiddenKeywords: [] };
   }
 
-  const selected = validKeywords.slice(0, Math.min(count, validKeywords.length));
+  const shuffled = [...validKeywords].sort(() => Math.random() - 0.5);
+  const selected = shuffled.slice(0, Math.min(count, shuffled.length));
   let blankedText = text;
 
   // 긴 키워드부터 처리 (부분 매칭 방지)
