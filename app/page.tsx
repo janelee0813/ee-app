@@ -89,7 +89,7 @@ export default function HomePage() {
               <BookMarked size={20} className="text-purple-700" />
             </div>
             <div>
-              <p className="text-[15px] font-semibold text-stone-800">시험준비 #6</p>
+              <p className="text-[15px] font-semibold text-stone-800">[1단계] 암기</p>
               <p className="text-[12px] text-stone-400 mt-0.5">개요 암기</p>
             </div>
           </Link>
@@ -102,7 +102,7 @@ export default function HomePage() {
               <PenLine size={20} className="text-orange-700" />
             </div>
             <div>
-              <p className="text-[15px] font-semibold text-stone-800">빈칸 테스트</p>
+              <p className="text-[15px] font-semibold text-stone-800">[1단계] 빈칸 테스트</p>
               <p className="text-[12px] text-stone-400 mt-0.5">키워드 빈칸 문제</p>
             </div>
           </Link>
@@ -136,19 +136,9 @@ export default function HomePage() {
         </Link>
       </div>
 
-      {/* 학습 흐름 안내 */}
-      <div className="bg-stone-100 rounded-2xl p-4 space-y-2">
-        <p className="text-[12px] font-semibold text-stone-500">권장 학습 순서</p>
-        <div className="flex items-center gap-2 flex-wrap text-[13px] text-stone-600">
-          <span>복음전체 보기</span>
-          <span className="text-stone-400">→</span>
-          <span>개요 #6 암기</span>
-          <span className="text-stone-400">→</span>
-          <span>빈칸 테스트</span>
-          <span className="text-stone-400">→</span>
-          <span>헷갈린 복습</span>
-        </div>
-      </div>
+      <p className="text-center text-[11px] text-stone-400 pb-2">
+        개발자 : 분당우리교회 4청년부 이종환
+      </p>
     </div>
   );
 }
