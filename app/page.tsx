@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { BookOpen, PenLine, BarChart2, RefreshCw, ArrowRight, BookMarked } from "lucide-react";
 import { getProgress } from "@/utils/storage";
-import { outline6 } from "@/data/contents";
+import { fullGospel } from "@/data/contents";
 import { calcOverallProgress } from "@/utils/progress";
 import ProgressBar from "@/components/ProgressBar";
 
@@ -13,7 +13,7 @@ export default function HomePage() {
 
   useEffect(() => {
     const p = getProgress();
-    setProgress(calcOverallProgress(outline6, p.itemStatuses));
+    setProgress(calcOverallProgress(fullGospel, p.itemStatuses));
     setLastStudied(p.lastStudied);
   }, []);
 
@@ -33,7 +33,7 @@ export default function HomePage() {
       {progress && (
         <div className="bg-white rounded-2xl border border-stone-200 p-5 shadow-sm">
           <div className="flex items-center justify-between mb-3">
-            <span className="text-[14px] font-semibold text-stone-700">개요 #6 전체 진도</span>
+            <span className="text-[14px] font-semibold text-stone-700">전체 복음제시 진도</span>
             <span className="text-[22px] font-bold text-blue-700">{progress.percent}%</span>
           </div>
           <ProgressBar percent={progress.percent} size="md" />
