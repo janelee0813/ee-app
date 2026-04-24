@@ -22,10 +22,10 @@ export default function HomePage() {
       {/* 헤더 */}
       <div className="pt-2">
         <p className="text-[12px] font-semibold text-blue-600 uppercase tracking-widest mb-1">
-          전도폭발 1단계
+          전도폭발 훈련자를 위한
         </p>
         <h1 className="text-[28px] font-bold text-stone-900 leading-tight">
-          복음제시<br />암기 훈련
+          전체 복음제시 훈련
         </h1>
       </div>
 
@@ -76,7 +76,7 @@ export default function HomePage() {
               <BookOpen size={20} className="text-blue-700" />
             </div>
             <div>
-              <p className="text-[15px] font-semibold text-stone-800">복음전체 암기</p>
+              <p className="text-[15px] font-semibold text-stone-800">전체 복음제시 암기</p>
               <p className="text-[12px] text-stone-400 mt-0.5">전체 흐름 암기</p>
             </div>
           </Link>
