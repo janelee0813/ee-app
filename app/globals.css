@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  background-color: #F8F7F2;
+}
+
+/* 버튼 터치 피드백 */
+button:active {
+  transform: scale(0.97);
+}
+
+/* 스크롤 부드럽게 */
+html {
+  scroll-behavior: smooth;
+}
