@@ -69,7 +69,7 @@ export default function HomePage() {
 
         <div className="grid grid-cols-2 gap-3">
           <Link
-            href="/study"
+            href="/study/full-gospel"
             className="bg-white rounded-2xl border border-stone-200 p-4 flex flex-col gap-3 active:bg-stone-50 transition-colors shadow-sm"
           >
             <div className="w-10 h-10 rounded-xl bg-blue-100 flex items-center justify-center">
